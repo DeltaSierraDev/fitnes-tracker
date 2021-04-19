@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
-  title = "Fitness tracker"
+  title = "Fitness Tracker Elite"
 
   constructor() { }
 
