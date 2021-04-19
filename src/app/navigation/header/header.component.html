@@ -2,9 +2,10 @@
   <a class="toolbar-nav-link-title" routerLink="/"><span>{{ title }}</span></a>
   <span class="toolbar-spacer"></span>
   <ul fxLayout fxLayoutGap="40px" class="toolbar-nav-links" fxHide.xs>
-    <li><a class="toolbar-nav-link" routerLink="/training" routerLinkActive="link-active">Training</a></li>
-    <li><a class="toolbar-nav-link" routerLink="/signup" routerLinkActive="link-active">Singup</a></li>
-    <li><a class="toolbar-nav-link" routerLink="/login" routerLinkActive="link-active">Login</a></li>
+    <li *ngIf="isAuth"><a class="toolbar-nav-link" routerLink="/training" routerLinkActive="link-active">Training</a></li>
+    <li *ngIf="!isAuth"><a class="toolbar-nav-link" routerLink="/signup" routerLinkActive="link-active">Singup</a></li>
+    <li *ngIf="!isAuth"><a class="toolbar-nav-link" routerLink="/login" routerLinkActive="link-active">Login</a></li>
+    <li *ngIf="isAuth"><a class="toolbar-nav-link" routerLink="/" (click)="onLogout()">Logout</a></li>
   </ul>
   <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-xs>
     <mat-icon>menu</mat-icon>
