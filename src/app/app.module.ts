@@ -14,6 +14,9 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SideNavListComponent } from './navigation/side-nav-list/side-nav-list.component';
+import { StopTrainingComponent } from './training/current-training/stop-training.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FormsModule } from '@angular/forms';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingComponent,
-    WellcomeComponent
+    WellcomeComponent,
+    HeaderComponent,
+    SideNavListComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,

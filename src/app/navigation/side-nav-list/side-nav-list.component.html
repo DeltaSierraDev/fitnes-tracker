@@ -1,0 +1,19 @@
+<mat-nav-list>
+  <!-- <a mat-list-item href="..." *ngFor="let link of links"> {{ link }} </a> -->
+  <a mat-list-item class="toolbar-nav-link" routerLink="/training" (click)="onClose()">
+    <mat-icon>fitness_center</mat-icon>
+    <span class="nav-link-caption">Training</span>
+  </a>
+  <a mat-list-item class="toolbar-nav-link" routerLink="/signup" (click)="onClose()">
+    <mat-icon>face</mat-icon>
+    <span class="nav-link-caption">Signup</span>
+  </a>
+  <a mat-list-item class="toolbar-nav-link" routerLink="/login" (click)="onClose()">
+    <mat-icon>input</mat-icon>
+    <span class="nav-link-caption">Login</span>
+  </a>
+  <a mat-list-item class="toolbar-nav-link" routerLink="/login" (click)="onClose()">
+    <mat-icon>eject</mat-icon>
+    <span class="nav-link-caption">Logout</span>
+  </a>
+</mat-nav-list>

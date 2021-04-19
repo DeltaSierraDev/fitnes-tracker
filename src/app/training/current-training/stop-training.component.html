@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Are Your sure?</h1>
+<mat-dialog-actions align="center" fxLayout="column">
+  <mat-dialog-content>
+    <p>You already got {{ data.progress / data.repeats }} repeats</p>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button color="warn" [mat-dialog-close]="true">YES</button>
+    <button mat-raised-button color="accent" [mat-dialog-close]="false" >NO</button>
+  </mat-dialog-actions>
+  <br>
+</mat-dialog-actions>

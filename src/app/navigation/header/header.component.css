@@ -1,0 +1,24 @@
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+a.toolbar-nav-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+a.toolbar-nav-link:hover, a.toolbar-nav-link:active {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+ul.toolbar-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link-caption {
+  display: inline-block;
+  margin-left: 6px;
+}

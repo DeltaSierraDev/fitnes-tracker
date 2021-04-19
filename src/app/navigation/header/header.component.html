@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <a class="toolbar-nav-link" routerLink="/"><span>{{ title }}</span></a>
+  <span class="toolbar-spacer"></span>
+  <ul fxLayout fxLayoutGap="40px" class="toolbar-nav-links" fxHide.xs>
+    <li><a class="toolbar-nav-link" routerLink="/training">Training</a></li>
+    <li><a class="toolbar-nav-link" routerLink="/signup">Singup</a></li>
+    <li><a class="toolbar-nav-link" routerLink="/login">Login</a></li>
+  </ul>
+  <button mat-icon-button (click)="onToggleSidenav()" fxHide.gt-xs>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>

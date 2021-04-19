@@ -1,1 +1,16 @@
-<p>current-training works!</p>
+<mat-progress-bar mode="indeterminate" *ngIf="progress<100"></mat-progress-bar>
+<section fxLayoutAlign="center" class="train-card">
+  <mat-card fxFlex.xs="98%" fxFlex.gt-sm="800px">
+      <mat-card-title fxLayoutAlign="center">Progress</mat-card-title>
+      <mat-card-subtitle fxLayoutAlign="center">Keep going on!</mat-card-subtitle>
+    <mat-card-content fxLayout="column" fxLayoutAlign="center center" >
+      <mat-spinner mode="determinate" [value]="progress"></mat-spinner>
+      <br>
+      <h3>{{ progress / repeats }} / {{ devider }} </h3>
+    </mat-card-content>
+    <mat-card-actions fxLayout="row" fxLayoutAlign="center">
+      <button mat-raised-button color="accent" (click)="onPause()">Stop</button>
+      <button mat-raised-button color="primary" disabled (click)="onSkip()">Skip</button>
+    </mat-card-actions>
+  </mat-card>
+</section>

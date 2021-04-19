@@ -1,1 +1,16 @@
-<p>new-training works!</p>
+<section fxLayoutAlign="center" class="train-card">
+  <mat-card fxFlex.xs="98%" fxFlex.gt-sm="800px">
+      <mat-card-title>Time to start a workout</mat-card-title>
+      <mat-card-subtitle>Excercising daily is very important to keep your body heatlhy.</mat-card-subtitle>
+      <h3>Please select excercise type:</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Excercise Type</mat-label>
+        <mat-select>
+          <mat-option value="pushup">Push ups</mat-option>
+          <mat-option value="situp">Sit ups</mat-option>
+        </mat-select>
+      </mat-form-field><br>
+      <button mat-raised-button color="primary" (click)="onStartTraining()">START</button>
+      <button mat-raised-button disabled color="accent">PLAN</button>
+  </mat-card>
+</section>
