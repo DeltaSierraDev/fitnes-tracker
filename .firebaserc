@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "finess-tracker-3f529": {
+      "hosting": {
+        "fitnes-tracker": [
+          "finess-tracker-3f529"
+        ]
+      }
+    }
+  }
+}

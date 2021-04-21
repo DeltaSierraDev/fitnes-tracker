@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDUb89MujpYDSWisLjoCtzArPd4vaoP7d4",
+    authDomain: "finess-tracker-3f529.firebaseapp.com",
+    projectId: "finess-tracker-3f529",
+    storageBucket: "finess-tracker-3f529.appspot.com",
+    messagingSenderId: "570496820920",
+    appId: "1:570496820920:web:79a5993f3e72424a8cf64d"
+  }
 };
 
 /*
